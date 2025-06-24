@@ -168,19 +168,19 @@ nav1.addEventListener("click",()=>{
 
 
 nav4.addEventListener("click",()=>{
-  nav4.style.width= "35vw";
-  nav4.style.height= "35vw";
-  nav4.style.borderRadius = "0%";
-  upload.style.transform= "translate(-200px)";
+  
   upload.style.display="flex";
 
-  
+  //nav4.style.width= "150px";
+  //nav4.style.height= "200px";
+  //nav4.style.borderRadius = "0%";
+  //upload.style.transform= "translate(-130px)";
   nav4.addEventListener("click",()=>{
    // console.log("Body is clicked")
-   nav4.style.width= "200px";
-   nav4.style.height= "200px";
-   nav4.style.borderRadius = "50%";
-   upload.style.transform= "translate(0px)";
+  // nav4.style.width= "200px";
+  // nav4.style.height= "200px";
+   //nav4.style.borderRadius = "50%";
+  // upload.style.transform= "translate(0px)";
    upload.style.display="none";
 
 });
@@ -192,7 +192,7 @@ inputFile.onchange = function(){
   }
 
 
-                                             /* Part - 2  :   Upload scanner*/ 
+                                             /* Part - 2  :   Upload Image*/ 
                                                      /*  End  */    
 
 
@@ -318,7 +318,7 @@ createBill.addEventListener("click",()=>{
    // console.log("create bill");
     flex1.style.position="absolute";
     flex1.style.display="flex";
-    createBill.style.transform="translateX(1500px)";
+    createBill.style.transform="translateX(350px)";
     createBill.innerText = "Close Bill";
 
     createBill.addEventListener("click",()=>{
