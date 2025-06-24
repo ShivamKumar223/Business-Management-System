@@ -516,6 +516,7 @@ height:30px;
 
  .table2{
     width:100%;
+    border-collapse: collapse;
  }
 
  .thead2 tr th{
@@ -539,6 +540,7 @@ height:30px;
  
  .tbody2 tr td{
    text-align:center;
+   height:30px;
 
  }
 
