@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="project1.css">
+</head>
+<body>
+    <ul class="navBar">
+       
+        <li class="nav" id="nav1">Set items</li>
+        <li class="nav" id="nav2">Check items</li>
+        <li class="nav" id="nav3">Total sale</li>
+        <li class="nav" id="nav5">Help</li>
+       
+    </ul>
+
+     <div class="userDetails" id="nav4">
+        <img src="shivam.jpg" >
+        <div>Shivam Yadav</div>
+    </div>
+
+<section class="background">    
+    <div class="changeImage">
+        <label for="file" id="label">Change scanner</label>
+        <input type="file" id="file" accept="image/jpg,image/jpeg,image/png">
+    </div>
+
+    <div class="box1">
+
+        <ul class="iDetails">
+            <li class="subDetail" id="subDetail1">Item's Name</li>
+            <li class="subDetail" id="subDetail2">Price</li>
+            <li class="subDetail" id="subDetail3">Avlable</li>
+            <li class="subDetail" id="subDetail4">Alert</li>
+        </ul>
+
+    <div class="inDetails">
+
+            <input type="text" class="subDetail inp" id="Dinput1" placeholder="Item's Name">
+            <input type="number" min="0" class="subDetail inp" id="Dinput2" placeholder="Rate" >
+            <input type="number" min="0" class="subDetail inp" id="Dinput3" placeholder="Total">
+            <input type="number" min="0" class="subDetail inp" id="Dinput4" placeholder="Alert">
+        
+    </div>
+
+    <div class="Buttons1st">
+           <button class="Button1st" id="Button1">Add item</button>
+           <button class="Button1st" id="Button2">Pop item</button>
+           <button class="Button1st" id="Button3">Clear items</button>
+    </div>
+         
+
+         <div class="setItem">
+            <table  class="table1">
+                <thead class="thead1">
+                    <tr>
+                        <th>Items Name</th><th>Price</th><th>Avaliable Items</th><th>Alter</th>
+                    </tr>
+                </thead>
+                <tbody class="tbody1">
+                    <!-- <tr>
+                        <td>Mango</td><td>50</td><td>11</td><td>3</td>
+                    </tr> -->
+                    
+                </tbody>
+            </table>
+         </div>
+
+</div>
+
+
+                                                  <!-- Part - 2  :   create bill -->
+                                                       <!--     start     -->    
+
+
+
+  <div class="flex">
+    <div class="box2">
+
+        <div class="nav2">
+            <div class="content1">
+           <div class="content1.1"> <input type="text" class="search" placeholder="Search items"><button class="searchButton">search</button></div>
+              <div class="content1.2">
+            <select name="shivam" class="select" id="shiva">
+                <!-- <option value="Mango">Mango</option>
+                <option value="Orange">Orange</option>
+                <option value="Apple">Apple</option>
+                <option value="Banana">Banana</option> -->
+            </select>
+            <input type="number" min="0" class="NoI" placeholder="Qty">
+        </div>
+        </div> <div class="content2">
+            
+          <button class="add1">Add</button>
+          <button class="remove1">Remove</button>
+          <button class="clear1">Clear</button>
+
+        </div>
+        </div>       
+
+          <div class="subBox2">
+
+            <table border="2" class="table2">
+                <thead class="thead2">
+                    <tr>
+                        <th>item's Name</th> <th>Rate</th> <th>Total Items</th> <th>Total Prise</th>
+                    </tr>
+                </thead>
+                <tbody class="tbody2">
+                    <!-- <tr>
+                        <td>Orange</td><td>50</td><td>5</td><td>150</td>
+                    </tr> -->
+                </tbody>
+            </table>
+                 
+          </div>
+<br>
+          <button class="share">Share</button>
+    </div>
+ </div>
+     
+</section>
+
+<!--create bill button to sho and hide bill slip-->
+<button class="createBill">Create Bill</button>
+
+
+                                                 <!-- Part - 3  :   check items -->
+                                                       <!--     start     -->    
+
+
+<div class="checkItem">
+    <table class="table3">
+        <thead class="thead3">
+            <tr>
+                <th>Items Name</th><th>Price</th><th>Avaliable Items</th><th>Alter</th>
+            </tr>
+        </thead>
+        <tbody class="tbody3">
+            <!-- <tr>
+                <td>Mango</td><td>50</td><td>11</td><td>3</td>
+            </tr> -->
+            
+        </tbody>
+    </table>
+ </div>
+
+    <script src="project1.js"></script>
+</body>
+</html>
+
+ 
