@@ -21,7 +21,7 @@ let clearButton = document.querySelector("#Button3");
 // console.log("clearButton= ",clearButton);
 
 let tbody1= document.querySelector(".tbody1");
- console.log("tbody1 = ",tbody1)
+ //console.log("tbody1 = ",tbody1)
 
 function searching(str){
    let i;
@@ -156,7 +156,7 @@ let nav4 = document.querySelector("#nav4 img");
 let upload = document.querySelector(".changeImage");
 let inputFile = document.querySelector("#file")
 
-console.log(inputFile);
+//console.log(inputFile);
 
 nav1.addEventListener("click",()=>{
    box1.style.transform= "translate(35vw)";
@@ -202,10 +202,10 @@ inputFile.onchange = function(){
 
  let totalArray=[];
 let select = document.querySelector("#shiva");
-console.log("select = ",select);
+//console.log("select = ",select);
 
 let addB2 = document.querySelector(".add1");
-console.log(addB2);
+//console.log(addB2);
 let removeB2 = document.querySelector(".remove1");
 let clearB2 = document.querySelector(".clear1");
 
@@ -282,7 +282,7 @@ removeB2.addEventListener("click",()=>{
    let j;
    let str = itemsArray[i];
    body2 = document.querySelectorAll(".tbody2 tr");
-   console.log(body2);
+   //console.log(body2);
    for(j=0;j<billItemsArray.length;j++)
       if(billItemsArray[j]==str)
          break;
@@ -329,4 +329,33 @@ createBill.addEventListener("click",()=>{
     createBill.innerText = "Create Bill";
     
     })
+})
+
+                                          /* check item*/
+
+const box3 = document.getElementsByClassName("box3");
+console.log("current ",box3);
+const checkItem = document.getElementById("nav2");
+console.log(checkItem);
+checkItem.addEventListener("click",()=>{
+    box3[0].style.transform="translateX(35vw)";
+
+    checkItem.addEventListener("click",()=>{
+    box3[0].style.transform="translateX(-35vw)";
+})
+})
+
+                                         /* Total sale*/
+
+
+const box4 = document.getElementsByClassName("box4");
+console.log("current ",box3);
+const totalSale = document.getElementById("nav3");
+console.log(checkItem);
+totalSale.addEventListener("click",()=>{
+    box4[0].style.transform="translateX(35vw)";
+
+   totalSale.addEventListener("click",()=>{
+    box4[0].style.transform="translateX(-35vw)";
+})
 })
