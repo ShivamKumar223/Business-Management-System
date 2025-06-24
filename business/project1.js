@@ -320,11 +320,15 @@ createBill.addEventListener("click",()=>{
     flex1.style.display="flex";
     createBill.style.transform="translateX(350px)";
     createBill.innerText = "Close Bill";
+    createBill.style.backgroundColor = "blue";
+    createBill.style.borderColor = "black";
 
     createBill.addEventListener("click",()=>{
       flex1.style.position="static";
       flex1.style.display="none";
     createBill.style.transform="translateX(0)";
     createBill.innerText = "Create Bill";
+    createBill.style.backgroundColor= "black";
+    createBill.style.borderColor = "white";
     })
 })
