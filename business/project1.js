@@ -140,14 +140,9 @@ if(rows[0])
 
 });
 
-                                                            /* Part - 1  :   Set Items*/ 
-                                                                    /*  End  */   
-                                                 
-                                                 
 
-/*-------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-                                                           /* Part - 2  :   Upload scanner*/ 
-                                                                     /*  End  */    
+
+
 let nav1 = document.querySelector("#nav1");
 let box1 = document.querySelector(".box1");
 
@@ -157,16 +152,28 @@ let upload = document.querySelector(".changeImage");
 let inputFile = document.querySelector("#file")
 
 //console.log(inputFile);
+var flag1 = true;
+const toggleSetItem = ()=>
+{
+   if(flag1)
+   {
+      box1.style.transform = "translate(35vw)";
+      flag1 = !flag1;
+   }
+   else{
+      box1.style.transform = "translate(0px)";
+      flag1 = !flag1;
+   }
+}
 
-nav1.addEventListener("click",()=>{
-   box1.style.transform= "translate(35vw)";
-   nav1.addEventListener("click",()=>{
-      box1.style.transform= "translate(0px)";
-   
-   });
-});
+nav1.addEventListener("click",toggleSetItem);
 
-
+                                                /* Part - 1  :   Set Items*/ 
+                                                       /*  End  */   
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+                                              /* Part - 2  :   Upload scanner*/ 
+                                                       /*  End  */    
+        
 nav4.addEventListener("click",()=>{
   
   upload.style.display="flex";
@@ -314,48 +321,72 @@ clearB2.addEventListener("click",()=>{
 
 let createBill = document.querySelector(".createBill");
 let flex1 = document.querySelector(".flex");
-createBill.addEventListener("click",()=>{
-   // console.log("create bill");
-    flex1.style.position="absolute";
-    flex1.style.display="flex";
-    createBill.style.transform="translateX(350px)";
-    createBill.innerText = "Close Bill";
-  
 
-    createBill.addEventListener("click",()=>{
+var flag = true;
+const toggleCreateBill = ()=>
+{
+   if(flag)
+   {
+      flex1.style.position="absolute";
+      flex1.style.display="flex";
+      createBill.style.transform="translateX(350px)";
+      createBill.innerText = "Close Bill";
+      flag = !flag;
+   }
+   else{
       flex1.style.position="static";
       flex1.style.display="none";
-    createBill.style.transform="translateX(0)";
-    createBill.innerText = "Create Bill";
-    
-    })
-})
+      createBill.style.transform="translateX(0)";
+      createBill.innerText = "Create Bill";
+      flag = !flag;
+   }
+}
+
+createBill.addEventListener("click", toggleCreateBill);
 
                                           /* check item*/
 
 const box3 = document.getElementsByClassName("box3");
-console.log("current ",box3);
+// console.log("current ",box3);
 const checkItem = document.getElementById("nav2");
-console.log(checkItem);
-checkItem.addEventListener("click",()=>{
-    box3[0].style.transform="translateX(35vw)";
+// console.log(checkItem);
 
-    checkItem.addEventListener("click",()=>{
-    box3[0].style.transform="translateX(-35vw)";
-})
-})
+var flag2 = true;
+const toggleCheckItem = ()=>
+{
+   if(flag2)
+   {
+      box1.style.transform = "translate(35vw)";
+      flag2 = !flag2;
+   }
+   else{
+      box1.style.transform = "translate(0px)";
+      flag2 = !flag2;
+   }
+}
+
+checkItem.addEventListener("click", toggleCheckItem);
 
                                          /* Total sale*/
 
 
 const box4 = document.getElementsByClassName("box4");
-console.log("current ",box3);
+// console.log("current ",box3);
 const totalSale = document.getElementById("nav3");
-console.log(checkItem);
-totalSale.addEventListener("click",()=>{
-    box4[0].style.transform="translateX(35vw)";
+// console.log(checkItem);
 
-   totalSale.addEventListener("click",()=>{
-    box4[0].style.transform="translateX(-35vw)";
-})
-})
+var flag3 = true;
+const toggleTotalSale = ()=>
+{
+   if(flag3)
+   {
+      box1.style.transform = "translate(35vw)";
+      flag3 = !flag3;
+   }
+   else{
+      box1.style.transform = "translate(0px)";
+      flag3 = !flag3;
+   }
+}
+
+totalSale.addEventListener("click", toggleTotalSale);
